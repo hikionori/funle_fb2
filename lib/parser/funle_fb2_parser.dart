@@ -5,14 +5,19 @@ import 'package:funle_fb2/parser/models/fb2_description.dart';
 import 'package:funle_fb2/parser/models/fb2_image.dart';
 
 class FB2Parser {
+  /// The path of the FB2 file.
   late final String path;
 
+  /// The file object of the FB2 file.
   late final File file;
 
+  /// The description of the FB2 file.
   late final FB2Description description;
 
+  /// The body of the FB2 file.
   late final FB2Body body;
 
+  /// The list of images in the FB2 file.
   final List<FB2Image> images = [];
 
   FB2Parser(this.path) {

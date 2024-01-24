@@ -1,9 +1,20 @@
 class FB2Author {
+  /// The id of the author.
   late final String? id;
+
+  /// The first name of the author.
   late final String? firstName;
+
+  /// The middle name of the author.
   late final String? middleName;
+
+  /// The last name of the author.
   late final String? lastName;
+
+  /// The nickname of the author.
   late final String? nickname;
+
+  /// The email of the author.
   late final String? email;
 
   FB2Author(String author) {

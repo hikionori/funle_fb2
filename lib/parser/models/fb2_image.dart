@@ -1,6 +1,11 @@
 class FB2Image {
+  /// The id of the image. for example: cover.jpg
   late final String? id;
+
+  /// The bytes of the image.
   late final String bytes;
+
+  /// The content type of the image. for example: image/jpeg
   late final String? contentType;
 
   FB2Image(final String binary) {

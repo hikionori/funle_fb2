@@ -1,6 +1,7 @@
 import 'package:funle_fb2/parser/models/fb2_author.dart';
 import 'package:funle_fb2/parser/models/fb2_image.dart';
 
+/// Represents the description of an FB2 document.
 class FB2Description {
   /// The genres of the document.
   late final List<String>? genres = <String>[];
