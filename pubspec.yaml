@@ -1,6 +1,6 @@
 name: funle_fb2
-description: "Package for working with fb2 files (now only parsing). This package provides functionality to parse FB2 files and extract information such as metadata, book title, author, and content. It is designed to be easy to use and integrate into Flutter applications."
-version: 1.0.0+1
+description: "This package provides functionality to parse FB2 files and extract information. It is designed to be easy to use and integrate into Flutter applications."
+version: 1.0.0+2
 repository: "https://github.com/hikionori/funle_fb2.git"
 homepage: "https://github.com/hikionori/funle_fb2.git"
 
