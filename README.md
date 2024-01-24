@@ -1,39 +1,34 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## FunLe FB2 - is a package for work with FB2 files.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+> This package is in development now. So it can be unstable and not work correctly.
+> This package based on [fb2_parse](https://pub.dev/packages/fb2_parse)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+#### Now it can:
+* Parse FB2 file for get information about book. And this can be used for display book in WebView.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+#### In future it will:
+* Parse FB2 file for get information about book. And this can be used for display book in WebView.
+* Provide widgets for display book in Flutter app.
+* Provide library for editing of creating new FB2 files.
 
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+1. Add dependency to your pubspec.yaml file:
+```toml
+dependencies:
+  funle_fb2: ^0.0.1
 ```
 
-## Additional information
+2. Import package in your dart file:
+```dart
+import 'package:funle_fb2/funle_fb2.dart';
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+3. Use it:
+```dart
+// Create instance of FB2Parser
+FB2Parser parser = FB2Parser("path/to/file.fb2");
+// parse file
+await parser.parse();
+// get book info
+String title = parser.description.title;
+```
