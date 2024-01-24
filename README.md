@@ -15,7 +15,7 @@
 1. Add dependency to your pubspec.yaml file:
 ```toml
 dependencies:
-  funle_fb2: ^0.0.1
+  funle_fb2: 1
 ```
 
 2. Import package in your dart file:
